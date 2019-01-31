@@ -4,10 +4,40 @@
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-nickname">Hi、{{userInfo.nickName}}</text>
+      <text class="desc">这是你的待办事项!</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="content">
+    <view class="item">
+      <view class="circle">
+      </view>
+      <view class="circle-inner"></view>
+      <div class="to-do-wrapp">
+        <view class="to-do-name">今日</view>
+        <view class="task">任务(5)</view>
+      </div>
+    </view>
+    <view class="item">
+      <view class="circle">
+      </view>
+      <view class="circle-inner"></view>
+      <div class="to-do-wrapp">
+        <view class="to-do-name">今日</view>
+        <view class="task">任务(5)</view>
+      </div>
+    </view>
+    <view class="item">
+      <view class="circle">
+      </view>
+      <view class="circle-inner"></view>
+      <div class="to-do-wrapp">
+        <view class="to-do-name">今日</view>
+        <view class="task">任务(5)</view>
+      </div>
+    </view>
+    <view class="item">
+      <div class="add"></div>
+    </view>
   </view>
 </view>
